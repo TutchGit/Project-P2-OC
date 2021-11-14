@@ -1,0 +1,671 @@
+* {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#body-bloc {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#submit {
+    border: 0;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    width: auto;
+    height: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    margin-right: 5%;
+}
+
+.menu li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3em;
+}
+
+#selected {
+    color: #0065FC;
+    border-top: solid;
+    border-top-color: #0065FC;
+    font-weight: 600;
+    margin-right: 25%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 800;
+}
+
+#info {
+    font-size: 2.5em;
+    margin-top: 0.5%;
+}
+
+#search-bar {
+    display: flex;
+    margin-top: 1%;
+    height: 5vh;
+    width: 100%;
+}
+
+#gps {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: #F2F2F2;
+    padding-right: 1.2%;
+    padding-left: 1.2%;
+    align-items: center;
+    border-radius: 40px 0 0 40px;
+    font-size: 2.5em;
+}
+
+.fa-map-marker-alt:before {
+    content: "\f3c5";
+    color: black;
+}
+
+#search {
+    height: 5vh;
+    width: 13%;
+    border-top: 1px #F2F2F2 solid;
+    border-bottom: 1px #F2F2F2 solid;
+    border-left: 2px #F2F2F2 solid;
+    border-right: 2px white solid;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding-left: 1%;
+}
+
+#input {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#submit {
+    height: 5vh;
+    width: 7%;
+    font-weight: 600;
+    font-size: 2.5em;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 40px 40px 0;
+}
+
+#filtres { /* div qui contient toute la section filtre */
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+#title  { /* c'est le <p> de filtres */
+    margin-right: 1%;
+    display: flex;
+    align-items: center;
+}
+
+#option { /* nom de toute la liste ul */
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#option .fas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    font-size: 1em;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    margin: -2px;
+}
+
+#option .text {
+    padding-left: 50px;
+}
+
+.filtre-menu { /* bloc contenant 1 FA et un text */
+    display: flex;
+    align-items: baseline;
+    border: 5px #F2F2F2 solid;
+    border-left: 0 solid;
+    border-radius: 6rem;
+    margin-left: 2%;
+    padding-right: 1%;
+}
+
+.filtre-menu:hover  {
+    background-color: #DEEBFF;
+}
+
+#more {
+    display: flex;
+    align-items: center;
+}
+
+#more .fas {
+    margin-right: 1%;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 50%;
+    font-size: 3em;
+}
+
+#more p {
+    font-size: 2.2em;
+}
+
+#bloc-flex-1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-bottom: 7vh;
+}
+
+/* début hebergement à marseille */
+
+#hebergement {
+    width: 67%;
+    height: auto;
+    background-color: #F2F2F2;
+    margin-top: 2%;
+    border-radius: 3rem;
+}
+
+#hebergement h2 {
+    font-size: 4em;
+    font-weight: bold;
+    padding-top: 4vh;
+    padding-left: 3%;
+}
+
+#marseille {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin-top: 2vh;
+    margin-left: 3%;
+}
+
+.hotel-marseille { /* reglage taille box info */
+    background-color: white;
+    width: 760px;
+    height: auto;
+    margin-right: 3%;
+    margin-bottom: 2.5%;
+    border: 15px white solid;
+    border-radius: 3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.hotel-marseille img { /* reglage taille image et crop */
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+    object-position: 60% 53%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.hotel-marseille figcaption {
+    margin-left: 4%;
+    font-size: 2.5em;
+    line-height: 1.7;
+}
+
+.hotel-marseille figcaption h3 {
+    font-weight: bold;
+}
+
+.hotel-marseille figcaption strong {
+    font-weight: bold;
+}
+
+.hotel-marseille figcaption .fas {
+    font-size: 0.7em;
+    color: #0065FC;
+}
+
+.hotel-marseille figcaption .grey {
+    color: #dddddd;
+}
+
+#afficher {
+    padding-left: 3%;
+    padding-bottom: 4%;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+/* fin partie hebergement à marseille */
+
+/* debut partie populaire */
+
+#populaire { 
+    width: 30%;
+    height: auto;
+    margin-top: 2%;
+    background-color: #F2F2F2;
+    border-radius: 3rem;
+}
+
+#bloc-populaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#bloc-titre {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4vh;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+#bloc-titre h2{
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#bloc-titre .fas {
+    font-size: 4em;
+}
+
+.selection-populaire {
+    display: flex;
+    background-color: white;
+    margin: 5%;
+    border: 10px white solid;
+    border-radius: 3rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.selection-populaire figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.5vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+}
+
+.selection-populaire figcaption h3 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.selection-populaire figcaption strong {
+    font-weight: bold;
+}
+
+.price {
+    margin-bottom: 3vh;
+    font-size: 2.5em;
+}
+
+.score {
+    margin-bottom: 1vh;
+}
+
+.selection-populaire img {
+    object-fit: cover;
+    width: 15vh;
+    height: 15vh;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+.selection-populaire .fas {
+    font-size: 2em;
+    color: #0065FC;
+}
+
+.selection-populaire .grey {
+    color: #dddddd;
+}
+
+/* Debut morceau activite */
+
+#activite {
+   /* margin-top: vh; */
+    width: 100%;
+    height: auto;
+}
+
+#activite h2 {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+#activite figcaption {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#bloc-activite {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+}
+
+.column-1 {
+    width: 100%;
+    height: auto;
+    margin-right: 2.5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 3rem;
+}
+
+.column-1 img {
+    max-width: 100%;
+    width: auto;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.column-1 p {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 5% 0 5% 5%;
+    border-radius: 0 0 3rem 3rem;
+}
+
+.column-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin-right: 2.5%;
+}
+
+.upper-2 {
+    width: auto;
+    height: 37vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 3rem;
+}
+
+.upper-2 img {
+    width: 100%;
+    height: 80%;
+    border-radius: 3rem 3rem 0 0;
+    object-fit: cover;
+    object-position: 50% 35%;
+}
+
+.upper-2 p {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 5% 0 5% 5%;
+    border-radius: 0 0 5rem 5rem;
+}
+
+.under-2 {
+    width: auto;
+    height: 25vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 3rem;
+}
+
+.under-2 img {
+    width: 100%;
+    height: 18vh;
+    border-radius: 3rem 3rem 0 0;
+    object-fit: cover;
+    object-position: 50% 5%;
+}
+
+.under-2 p {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 5% 0 5% 5%;
+    border-radius: 0 0 5rem 5rem;
+}
+
+.column-3 {
+    width: 100%;
+    height: auto;
+    margin-right: 2.5%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 3rem;
+}    
+
+.column-3 img {
+    max-width: 100%;
+    width: auto;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 3rem 3rem 0 0;
+}
+
+.column-3 p {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 5% 0 5% 5%;
+    border-radius: 0 0 3rem 3rem;
+}
+
+.column-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+
+.upper-4 {
+    width: auto;
+    height: 30vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 3rem;
+}
+
+.upper-4 img {
+    width: 100%;
+    height: 80%;
+    border-radius: 3rem 3rem 0 0;
+    object-fit: cover;
+    object-position: 50% 35%;
+}
+
+.upper-4 p {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 4% 0 5% 5%;
+    border-radius: 0 0 5rem 5rem;
+}
+
+.under-4 {
+    width: auto;
+    height: 32vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+    border-radius: 3rem;
+}
+
+.under-4 img {
+    width: 100%;
+    height: 25vh;
+    border-radius: 3rem 3rem 0 0;
+    object-fit: cover;
+    object-position: 50% 5%;
+}
+
+.under-4 p {
+    font-weight: bold;
+    font-size: 3em;
+    padding: 5% 0 5% 5%;
+    border-radius: 0 0 5rem 5rem;
+}
+
+footer {
+    margin-top: 5%;
+    padding-bottom: 5%;
+    width: 100%;
+    height: 25vh;
+    background-color: #F2F2F2;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 3em;
+}
+
+footer ul {
+    padding-top: 5%;
+}
+
+footer li {
+    font-size: 2.5em;
+    line-height: 2;
+}
+
+#bloc-footer {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
+    height: 75%;
+    padding-top: 3%;
+}
+
+#propos {
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+#info-hotel {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#help {
+    padding-left: 10%;
+}
+
+@media screen and (max-width: 768px){
+    
+    body {
+        font-size: 1em;
+    }
+
+    #hebergement h2 {
+        font-size: 1em;
+    }
+
+    #bloc-titre h2 {
+        font-size: 1em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+
+    header {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #logo {
+        height: 45%;
+        width: 30%;
+        margin-top: 0;
+    }
+
+    .menu li{
+        font-size: 1em;
+    }
+
+    #selected {
+        border-bottom: solid;
+        border-top: none;
+    }
+
+    #accueil h1 {
+        font-size: 1.5em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 5%;
+    }
+
+    #info {
+        font-size: 1em;
+        margin-top: 5%;
+    }
+
+    #search-bar {
+        margin-top: 10%;
+        height: 8vh;
+        font-size: 0.5em;
+    }
+
+    #filtres {
+        flex-wrap: wrap;
+        font-size: 1em ;
+    }
+
+    #option {
+        flex-wrap: wrap;
+    }
+
+    #more {
+        font-size: 0.5em;
+    }
+
+    #bloc-flex-1 {
+        flex-direction: column;
+    }
+
+    #bloc-activite {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
