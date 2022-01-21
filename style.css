@@ -5,8 +5,12 @@
     margin: 0;
 }
 
-body {
-    margin: 0 20px; /* 20px for better visual (nothing stick to side) */
+main {
+    margin: 0 50px; /* 20px for better visual (nothing stick to side) */
+}
+
+.accueil {
+    margin: 0 50px;
 }
 
 a {
@@ -173,6 +177,8 @@ header nav ul li:hover {
 
 main {
     margin-top: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 main strong {
@@ -288,5 +294,69 @@ main h3 {
 }
 
 .main__popu figcaption p {
+    margin-top: 10px;
+}
+
+/* section activités marseille */
+
+.main__acti {
+    margin-top: 60px;
+}
+
+.main__acti__places {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main__acti__places p {
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 3px 4px #e2dfdff8;
+    padding: 15px 0 15px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.main__acti__places img {
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 650px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.acti__place__short img {
+    width: 100%;
+    height: auto;
+}
+
+.bigger img{
+    flex-grow: 0;
+}
+
+/* footer section */
+
+footer {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    padding-left: 50px;
+    background-color: #F2F2F2;
+    width: auto;
+    height: 200px;
+}
+
+.footer__info { /*use it so their is space between div, without leaving left side */
+    flex: 1;
+}
+
+footer ul {
+    margin-top: 20px;
+}
+
+footer ul li {
     margin-top: 10px;
 }
