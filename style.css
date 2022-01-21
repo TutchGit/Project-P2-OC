@@ -52,17 +52,241 @@ header nav ul li:hover {
     color: #0065FC;
 }
 
-/* First section => search + filter */
+/* First section => search + filter + info */
 
-.accueil h1 {
+.accueil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: auto;
+    height: 250px;
     margin-top: 20px;
 }
 
 .accueil__info {
-    margin-top: 10px;
+    line-height: 2;
 }
+
+/* search and submit parts */
 
 .accueil__form {
     display: flex;
-    margin-top: 25px;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.accueil__form i {
+    padding: 0 20px 0 0;
+}
+
+.accueil__form form {
+    width: auto;
+    height: 45px; /* change height of search and submit */
+    display: flex;
+    justify-content: center;
+}
+
+.accueil__form__search {
+    width: auto;
+    height: 100%;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-style: none;
+}
+
+.accueil__form__submit {
+    width: auto;
+    height: 100%;
+    padding: 0 15px;
+    border-radius: 0 15px 15px 0;
+    border-style: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: white;
+    background-color: #0065FC;
+}
+
+/* filters parts */
+
+.accueil__filtres {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bold;
+
+}
+
+.accueil__filtres ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    height: auto;
+}
+
+.accueil__filtres ul li {
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 0px 2px #F2F2F2 inset;
+    border-radius: 20px;
+    box-sizing: content-box;
+    padding-right: 20px;
+}
+
+.accueil__filtres ul li:hover {
+    cursor: pointer;
+    background-color: #DEEBFF;
+}
+
+.accueil__filtres ul li:hover i {
+    background-color: #0065FC;
+    color: #DEEBFF;
+}
+
+.accueil__filtres ul li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    background-color: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/* Info parts */
+
+.accueil__info {
+    display: flex;
+    align-items: center;
+}
+
+.accueil__info i {
+    font-size: 1.2em;
+    margin-right: 10px;
+    background-color: #0065FC;
+    box-shadow: 0px 0px 0px 2px #F2F2F2 inset;
+    border-radius: 1em;
+}
+
+/* section hébergement + populaires */
+
+main {
+    margin-top: 30px;
+}
+
+main strong {
+    font-weight: bold;
+}
+
+main h3 {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main__bloc1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__bloc1 section {
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px 40px;
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.grey {
+    color: #dddada;
+}
+
+/* hébergement part */
+
+.main__heber {
+    width: 60%;
+    height: auto;
+}
+
+.main__heber__hotel {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main__heber__hotel img {
+    width: 330px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.main__heber__hotel figure {
+    margin-top: 40px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 4px #e2dfdff8;
+}
+
+.main__heber__hotel figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: auto;
+    height: 80px;
+    padding-left: 5px;
+}
+
+.main__heber__more {
+    margin: 50px 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* populaires parts */
+
+.main__popu {
+    width: 25%;
+    height: auto;
+}
+
+.main__popu__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.main__popu__title i {
+    font-size: 2em;
+}
+
+.main__popu img {
+    width: 160px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+
+.main__popu figure {
+    display: flex;
+    margin-top: 40px;
+    background-color: white;
+    border: 5px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 4px #e2dfdff8;
+}
+
+.main__popu figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+    padding: 15px 0;
+}
+
+.main__popu figcaption p {
+    margin-top: 10px;
 }
