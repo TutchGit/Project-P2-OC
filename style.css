@@ -193,6 +193,7 @@ main h3 {
 .main__bloc1 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap-reverse;
 }
 
 .main__bloc1 section {
@@ -303,38 +304,60 @@ main h3 {
     margin-top: 60px;
 }
 
-.main__acti__places {
+.acti__bloc {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-top: 30px;
-    width: 100%;
+    margin-top: 20px;
+    max-height: 500px;
 }
 
-.main__acti__places p {
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0px 3px 4px #e2dfdff8;
-    padding: 15px 0 15px 15px;
+.acti__bloc figcaption {
     font-size: 1.2em;
     font-weight: bold;
+    padding: 15px 0 15px 15px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 0px 5px 4px #e2dfdff8;
 }
 
-.main__acti__places img {
+.acti__place__tall {
+    width: 400px;
+    height: 500px;
+}
+
+.acti__place__tall img {
     width: 100%;
-    max-width: 400px;
     height: 100%;
-    max-height: 650px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    vertical-align: text-bottom; /* remove gap under image */
+}
+
+.acti__place__short {
+    width: 400px;
+    height: 200px;
 }
 
 .acti__place__short img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    vertical-align: text-bottom;
 }
 
-.bigger img{
-    flex-grow: 0;
+
+.bigger {
+    height: 250px;
+}
+
+.shorter {
+    height: 150px;
+    margin-top: 100px;
+}
+
+.img6 {
+    margin-top: 100px;
 }
 
 /* footer section */
