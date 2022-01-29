@@ -1,12 +1,13 @@
 /* Reset/Clean up page */
 
 * {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
 }
 
 main {
-    margin: 0 50px; /* 20px for better visual (nothing stick to side) */
+    margin: 0 5%; /* 20px for better visual (nothing stick to side) */
 }
 
 .accueil {
@@ -68,7 +69,7 @@ header nav ul li:hover {
     margin-top: 20px;
 }
 
-.accueil__info {
+.accueil__entry {
     line-height: 2;
 }
 
@@ -114,6 +115,10 @@ header nav ul li:hover {
     font-weight: bold;
     color: white;
     background-color: #0065FC;
+}
+
+.accueil__mobile__mark {
+    display: none;
 }
 
 /* filters parts */
@@ -201,12 +206,6 @@ main h3 {
     flex-wrap: wrap-reverse;
 }
 
-.main__bloc1 section {
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    padding: 40px 40px;
-}
-
 .fa-star {
     color: #0065FC;
 }
@@ -220,6 +219,9 @@ main h3 {
 .main__heber {
     width: 60%;
     height: auto;
+    background: #F2F2F2;
+    padding: 40px 40px;
+    border-radius: 20px;
 }
 
 .main__heber__hotel {
@@ -229,7 +231,7 @@ main h3 {
 }
 
 .main__heber__hotel img {
-    width: 330px;
+    width: 300px;
     height: 150px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
@@ -263,6 +265,9 @@ main h3 {
 .main__popu {
     width: 25%;
     height: auto;
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px 40px;
 }
 
 .main__popu__title {
@@ -273,6 +278,10 @@ main h3 {
 
 .main__popu__title i {
     font-size: 2em;
+}
+
+.main__popu__bloc {
+    
 }
 
 .main__popu img {
@@ -307,6 +316,7 @@ main h3 {
 
 .main__acti {
     margin-top: 60px;
+    height: auto;
 }
 
 .acti__bloc {
@@ -314,7 +324,6 @@ main h3 {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 20px;
-    max-height: 500px;
 }
 
 .acti__bloc figcaption {
@@ -370,10 +379,8 @@ footer {
     display: flex;
     align-items: center;
     margin-top: 100px;
-    padding-left: 50px;
+    padding: 50px 0 50px 50px;
     background-color: #F2F2F2;
-    width: auto;
-    height: 200px;
 }
 
 .footer__info { /*use it so their is space between div, without leaving left side */
@@ -388,6 +395,257 @@ footer ul li {
     margin-top: 10px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+
+    /* HEADER */
     
-}
+    header {
+        flex-direction: column; 
+    }
+
+    header nav ul li {
+        padding: 35px 25px 15px 25px;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        border-color: transparent;
+    }
+    
+    header nav ul li:hover {
+        border-color: #0065FC;
+        color: #0065FC;
+    }
+
+    /*BARRE DE RECHERCHE */
+
+    .accueil {
+        height: auto;
+    }
+
+    .accueil__form {
+        margin-top: 20px;
+    }
+    
+    .accueil__form__search {
+        border: none;
+    }
+    
+    .accueil__form__submit {
+        display: none;
+    }
+
+    .accueil__mobile__button {
+        border: none;
+    }
+
+    .accueil__mobile__mark {
+        display: block;
+        background-color: #0065FC !important;
+        border-radius: 15px !important;
+        font-size: 1.2em;
+    }
+
+    .accueil__filtres {
+        margin-top: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .accueil__filtres ul {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 350px;
+    }
+
+    .accueil__filtres ul li {
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    .accueil__info {
+        margin-top: 25px;
+    }
+
+    .accueil__info i {
+        margin-bottom: 15px;
+    }
+
+    /* MAIN */
+
+    .main__popu {
+        width: 100%;
+        padding: 40px 5%;
+        border-radius: 0;
+    }
+
+    #rectangle {
+        width: 60%;
+    }
+
+    .main__heber {
+        width: 100%;
+        margin-top: 50px;
+        background: none;
+    }
+
+    /* ACTIVITE */
+
+    .main__acti img {
+        height: 200px;
+    }
+
+    .acti__place__tall {
+        width: 380px;
+        height: 280px;
+    }
+
+    .acti__place__short {
+        width: 380px;
+        height: 280px;
+    }
+
+    .shorter {
+        margin-top: 0;
+    }
+
+    .img6 {
+        margin-top: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__info {
+        margin-top: 50px;
+    }
+
+}  
+
+    @media screen and (min-width: 768px) and (max-width: 991px){
+
+         /* HEADER */
+    
+    header {
+        flex-direction: column; 
+    }
+
+    header nav ul li {
+        padding: 35px 25px 15px 25px;
+        border-top: none;
+        border-bottom: 3px solid #0065FC;
+        border-color: transparent;
+    }
+    
+    header nav ul li:hover {
+        border-color: #0065FC;
+        color: #0065FC;
+    }
+
+    /*BARRE DE RECHERCHE */
+
+    .accueil {
+        height: auto;
+    }
+
+    .accueil h1 {
+        text-align: center;
+    }
+
+    .accueil p {
+        text-align: center;
+    }
+
+    .accueil__form {
+        margin: auto;
+        margin-top: 25px;
+    }
+    
+    .accueil__form__search {
+        border: none;
+    }
+
+    .accueil__filtres {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .accueil__filtres ul {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .accueil__filtres ul li {
+        margin-right: 10px;
+        margin-top: 15px;
+    }
+
+    .accueil__info {
+        margin: auto;
+        margin-top: 25px;
+    }
+
+    /* MAIN */
+
+    .main__popu {
+        width: 60%;
+        margin: auto;
+        padding: 40px 5%;
+        border-radius: 0;
+    }
+
+    .main__heber {
+        margin: auto;
+        width: 60%;
+        margin-top: 50px;
+        border-radius: 0;
+    }
+
+    .main__heber h2 {
+        text-align: center;
+    }
+
+    .main__heber__hotel {
+        justify-content: center;
+    }
+
+    /* ACTIVITE */
+
+    .main__acti {
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .main__acti img {
+        height: 200px;
+    }
+
+    .acti__place__tall {
+        width: 380px;
+        height: 280px;
+    }
+
+    .acti__place__short {
+        width: 380px;
+        height: 280px;
+    }
+
+    .shorter {
+        margin-top: 0;
+    }
+
+    .img6 {
+        margin-top: 0;
+    }
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 0;
+    }
+
+    }

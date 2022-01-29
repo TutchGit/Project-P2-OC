@@ -25,13 +25,14 @@
         <section class="accueil">
             <div>
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="accueil__info">En plein centre ville ou en pleine nature</p>
+                <p class="accueil__entry">En plein centre ville ou en pleine nature</p>
             </div>
             <div class="accueil__form">
                 <p><i class="fas fa-map-marker-alt"></i></p>
                 <form method="post" action="traitement.php">
                     <input class="accueil__form__search" type="search" name="search" value="Marseille, France">
                     <input class="accueil__form__submit" type="submit" value="Rechercher">
+                    <button class="accueil__mobile__button"><i class="fas fa-search fa-inverse accueil__mobile__mark"></i></button>
                 </form>
             </div>
             <div class="accueil__filtres">
@@ -51,7 +52,7 @@
 
     <main>
         <div class="main__bloc1">
-            <section class="main__heber">
+            <section id="hebergement" class="main__heber">
                 <h2>Hébergements à Marseille</h2>
                 <div class="main__heber__hotel">
                     <div>
@@ -159,7 +160,7 @@
                         <h2>Les plus populaires</h2>
                         <p><i class="fas fa-chart-line"></i></p>
                     </div>
-                    <div>
+                    <div class="main__popu__bloc">
                         <a href=”#”>
                             <figure>
                                 <img src="images/desktop/populaires/soleil-matin-small.jpg" alt="Hôtel Le soleil du matin">
@@ -196,7 +197,7 @@
                         </a> 
                         <a href=”#”>
                             <figure>
-                                <img src="images/desktop/populaires/bleu-blanc-small.jpg" alt="Hôtel Tout bleu et blanc">
+                                <img id="rectangle" src="images/desktop/populaires/bleu-blanc-small.jpg" alt="Hôtel Tout bleu et blanc">
                                     <figcaption>
                                         <div>
                                             <h3>Hôtel Tout bleu et blanc</h3>
@@ -215,7 +216,7 @@
             </section>
         </div>
 
-        <section class="main__acti">
+        <section id="activite" class="main__acti">
             <h2>Activités à Marseille</h2>
             <div class="acti__bloc">
                 <a href=”#”>
