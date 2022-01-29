@@ -455,7 +455,7 @@ footer ul li {
     .accueil__filtres ul {
         flex-wrap: wrap;
         justify-content: flex-start;
-        width: 350px;
+        width: 100%;
     }
 
     .accueil__filtres ul li {
